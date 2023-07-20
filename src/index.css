@@ -1,13 +1,188 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F2F2F2;
+  
+}
+a{
+  color: unset;
+  text-decoration: none;
+}
+input{
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Navbar component style */
+.navbar{
+  width: 100%;
+  padding: 20px 20px 20px 500px;
+  background-color: yellow;
+  background-image:
+    radial-gradient(
+      #de0a8d,
+      rgb(157, 135, 235) 
+      
+    );
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  font-size: 1.5rem;
+  color: black;
+}
+
+
+.navbar button{
+  background-color: rgb(219, 65, 65);
+  color: black;
+  
+  padding: 5px 10px;
+  cursor: pointer;
+  
+}
+.navbar button:hover{
+  background-color: #FD0102;
+  color: white;
+}
+
+#root{
+  background-image: url('./imgs/1.png');
+  /* Other background properties */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Other styles */
+  font-family: sans-serif;
+  color: #333;
+}
+/* AlbumsList component style */
+.albums-list{
+  width: 85%;
+  margin: auto;
+  padding-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* List component style */
+.list{
+  width: 310px;
+  height: 200px;
+  background-color: #478AC9;
+  margin-bottom:5px ;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('./imgs/2.png');
+  /* Other background properties */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.list h3{
+  margin-top: 35px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.button-group{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.update-btn{
+  background-color: black;
+  color: white;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.update-btn:hover{
+  background-color: white;
+  color: black;
+}
+.delete-btn{
+  cursor: pointer;
+  border: 0px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+}
+.delete-btn:hover{
+  color:red;
+  background-color:white;
+}
+
+/* UpdateAlbum component style */
+.update-album{
+  width: 350px;
+  height: 570px;
+  margin: auto;
+  padding-top: 73px;
+  color: white;
+}
+.form-container{
+  background-color: #478AC9;
+  padding: 10px;
+  margin-top: 50px;
+  background-image: url('./imgs/3.png');
+  /* Other background properties */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inp-container{
+  margin: 10px;
+}
+.form-container button{
+  background-color: green;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* addAlbum container style */
+.addalbum-container{
+  color: white;
+  padding-top: 73px;
+  width: 300px;
+  margin: auto;
+  height: 570px;
+}
+.addalbum-form{
+  padding: 10px  10px 10px 10px ;
+  margin-top: 100px;  
+  background-image: url('./imgs/3.png');
+  /* Other background properties */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.addalbum-form button{
+  background-color: green;
+  padding: 10px 20px;
+  color: white; 
+}
+@media screen and (max-width: 850px) {
+  .navbar{
+   
+    padding: 20px 20px;
+   
+  }
 }
